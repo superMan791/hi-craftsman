@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo-prj
+  cloud:
+    nacos:
+      config:
+        server-addr: d3q8245738.zicp.vip:14756
+        prefix: ${spring.application.name}
+        file-extension: yaml
+        namespace: 5e1e3c80-8d88-4648-92d5-e49827abcd9d
+        shared-configs[0]:
+          data-id: bootstrap-common.yaml
+          group: DEFAULT_GROUP
+          refresh-enabled: true
+        group: DEFAULT_GROUP
+        refresh-enabled: true

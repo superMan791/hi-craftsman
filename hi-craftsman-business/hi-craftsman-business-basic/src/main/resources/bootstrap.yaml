@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: basic-prj
+  profiles:
+    active: dev
+server:
+  port: 8005

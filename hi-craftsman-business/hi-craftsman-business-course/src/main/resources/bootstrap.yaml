@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: course-prj
+  profiles:
+    active: dev
+server:
+  port: 8005

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway-prj
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.31.251:8848
+        prefix: ${spring.application.name}
+        file-extension: yaml
+        namespace: 5e1e3c80-8d88-4648-92d5-e49827abcd9d
+        shared-configs[0]:
+          data-id: bootstrap-common.yaml
+          group: DEFAULT_GROUP
+          refresh-enabled: true
+        group: DEFAULT_GROUP
+        refresh-enabled: true
+server:
+  port: 8003
+swagger:
+  services: 'demo-prj,test.prj'
