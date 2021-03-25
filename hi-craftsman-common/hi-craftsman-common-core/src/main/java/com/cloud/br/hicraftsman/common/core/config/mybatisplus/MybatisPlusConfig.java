@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2021/1/21 8:34
  */
 @Configuration
-@MapperScan("com.tech.biran.**.dao")
+@MapperScan("com.cloud.br.**.dao")
 public class MybatisPlusConfig {
 
     @Bean
