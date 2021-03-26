@@ -4,7 +4,7 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: d3q8245738.zicp.vip:14756
+        server-addr: 127.0.0.1:8848
         prefix: ${spring.application.name}
         file-extension: yaml
         namespace: 5e1e3c80-8d88-4648-92d5-e49827abcd9d
@@ -14,3 +14,10 @@ spring:
           refresh-enabled: true
         group: DEFAULT_GROUP
         refresh-enabled: true
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 5e1e3c80-8d88-4648-92d5-e49827abcd9d
+        metadata:
+          management:
+            context-path: /actuator
+        group: DEFAULT_GROUP
